@@ -1,0 +1,38 @@
+Soal 1.
+STORE "mass" with 600
+STORE "acceleration" with 2
+STORE "force" without any value
+
+CALCULATE "mass" times "acceleration"
+SET "force" value with calculation result
+
+DISPLAY "force"
+
+
+Soal 2.
+STORE "year" to any number
+
+IF ("year" % 4 == 0 AND "year" % 100 != 0) OR ("year" % 4 == 0 AND "year" % 100 == 0 AND "year" % 400 == 0) THEN
+  DISPLAY "true"
+ELSE
+  DISPLAY "false"
+
+
+Soal 3.
+STORE "clothes" with 0
+DISPLAY "clothes"
+WHILE "clothes" < 20
+  ADD "clothes" by 1
+  DISPLAY "clothes"
+
+DISPLAY "Ready to Start Washing"
+
+
+Soal 4.
+WHILE "count" < 40
+  STORE "student" with student's name
+  DISPLAY "student"
+  IF "nailIsLong" THEN
+    DISPLAY "Punishment!"
+  ELSE
+    DISPLAY "Reward!"
