@@ -16,19 +16,21 @@ IF ("year" % 4 == 0 AND "year" % 100 != 0) OR ("year" % 4 == 0 AND "year" % 100 
   DISPLAY "true"
 ELSE
   DISPLAY "false"
-
+END IF
 
 Soal 3.
 STORE "clothes" with 0
 DISPLAY "clothes"
 WHILE "clothes" < 20
-  ADD "clothes" by 1
+  SET "clothes" to ("clothes" + 1)
   DISPLAY "clothes"
+END WHILE
 
 DISPLAY "Ready to Start Washing"
 
 
 Soal 4.
+STORE "count" with 0
 WHILE "count" < 40
   STORE "student" with student's name
   DISPLAY "student"
@@ -36,3 +38,6 @@ WHILE "count" < 40
     DISPLAY "Punishment!"
   ELSE
     DISPLAY "Reward!"
+  END IF
+  SET "count" to ("count" + 1)
+END WHILE
